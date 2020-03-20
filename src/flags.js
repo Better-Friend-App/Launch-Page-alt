@@ -1,3 +1,4 @@
 module.exports = {
-    subscribed: "bf-subscribed"
+    subscribed: "bf-subscribed",
+    subscribedEmail: "bf-subscribed-email"
 }
