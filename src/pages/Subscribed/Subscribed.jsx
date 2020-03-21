@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Confetti from "../../components/Confetti";
+import ShareBar from "../../components/ShareBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 
 import {
@@ -35,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   },
   body: {
     fontWeight: "lighter",
-    margin: "2rem 0"
+    margin: "1.5rem 0"
 
   },
   flexContainer: {
@@ -170,6 +172,24 @@ function Subscribed() {
                 </div>
               </Grid>
             </Grid>
+          </div>
+          <div className={classes.socialBox}>
+            <Typography
+              className={clsx(classes.subHeader, classes.socialHeader)}
+              variant="h4"
+              align="center"
+              color="primary"
+            >
+              Spread the Word!
+          </Typography>
+            <Typography className={classes.body} variant="subtitle1" align="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id. In cursus turpis massa tincidunt.
+         </Typography>
+         <div className={classes.flexContainer}>
+           <div className={classes.flexItem}>
+           <ShareBar />
+           </div>
+         </div>
           </div>
         </Grid>
       </Grid>

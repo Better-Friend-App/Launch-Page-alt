@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import SubscriptionForm from "../../components/SubscriptionForm"
 import flags from "../../flags";
 
+import ShareBar from "../../components/ShareBar"
+
 import {
   Grid,
   Typography,
@@ -79,6 +81,7 @@ function Landing(props) {
       // Perform action (show user snackbar)
       setAlertOpen(true);
     }
+
   }, [])
 
   return (
@@ -173,6 +176,10 @@ function Landing(props) {
                 ❤️
               </span>
             </Typography>
+
+            {/* SOCIAL SHARING BUTTONS */}
+            <ShareBar />
+
             <Paper elevation={7} className={classes.subscriptionBox}>
               <Typography variant="overline" align="center" component="p" className={classes.subscriptionHeader}>
                 Stay Updated
