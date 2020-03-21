@@ -3,6 +3,8 @@ import { Switch, Route } from "react-router-dom"
 import Landing from "./pages/Landing";
 import Subscribed from "./pages/Subscribed";
 import SubscribedRoute from "./components/SubscribedRoute"
+/* IMPORT HOVER.JS LIBRARY */
+import "hover.css";
 
 function App() {
 
