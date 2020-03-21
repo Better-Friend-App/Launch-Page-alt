@@ -13,6 +13,7 @@ import {
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core";
 
+// Links to social media pages
 const socialLinks = {
   facebook: "#",
   twitter: "#",
@@ -62,7 +63,9 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
+// Number of initial pieces/round
 const INITIAL = 300;
+// Number of pieces to decrease for each round every second
 const DECREASE_STEP = -5;
 
 function Subscribed() {
