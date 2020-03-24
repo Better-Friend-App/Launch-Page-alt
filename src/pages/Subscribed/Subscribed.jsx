@@ -125,55 +125,44 @@ function Subscribed() {
             <img src="./better-friend-emoji.gif" height="128" width="128" border="0" alt="Become a Better Friend" />
           </Typography>
           <Typography className={classes.body} variant="h6" align="center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id. In cursus turpis massa tincidunt. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Tincidunt arcu non sodales neque sodales ut etiam sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo.
+            Thank you! With your help, we are one step closer to our mission to increase connectedness, & radically improve the quality of people's relationships. If you'd like, stay connected with us on our social media!
          </Typography>
-          <div className={classes.socialBox}>
-            <Typography
-              className={clsx(classes.subHeader, classes.socialHeader)}
-              variant="h4"
-              align="center"
-              color="primary"
-            >
-              Stay Connected!
-          </Typography>
-            <Typography className={classes.body} variant="subtitle1" align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id. In cursus turpis massa tincidunt.
-         </Typography>
-            <Grid container justify="center" alignItems="center" className={clsx(classes.main, classes.socialBar)}>
 
-              <Grid item xs={4}>
-                <div className={classes.flexContainer}>
-                  <div className={clsx("hvr-grow-rotate",classes.flexItem)}>
+          <Grid container justify="center" alignItems="center" className={clsx(classes.main, classes.socialBar)}>
+
+            <Grid item xs={4}>
+              <div className={classes.flexContainer}>
+                <div className={clsx("hvr-grow-rotate", classes.flexItem)}>
                   <IconButton href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
 
                     <FontAwesomeIcon icon={faFacebookF} size={"lg"} className={clsx("hvr-grow-rotate", classes.facebookIcon)} />
-                    </IconButton>
+                  </IconButton>
 
-                  </div>
                 </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div className={classes.flexContainer}>
-                  <div className={clsx("hvr-grow-rotate",classes.flexItem)}>
-                    <IconButton href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faTwitter} size={"lg"} className={clsx("hvr-grow-rotate", classes.twitterIcon)} />
-                    </IconButton>
-                  </div>
-                </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div className={classes.flexContainer}>
-                  <div className={clsx("hvr-grow-rotate",classes.flexItem)}>
-                  <IconButton href={socialLinks.goFundMe} target="_blank" rel="noopener noreferrer" >
-                    <img style={{height: "1.5em"}} className={"hvr-grow-rotate"} src="https://image.flaticon.com/icons/svg/2111/2111427.svg" />
-                    </IconButton>
-
-                  </div>
-                </div>
-              </Grid>
+              </div>
             </Grid>
-          </div>
-          <div className={classes.socialBox}>
+            <Grid item xs={4}>
+              <div className={classes.flexContainer}>
+                <div className={clsx("hvr-grow-rotate", classes.flexItem)}>
+                  <IconButton href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faTwitter} size={"lg"} className={clsx("hvr-grow-rotate", classes.twitterIcon)} />
+                  </IconButton>
+                </div>
+              </div>
+            </Grid>
+            <Grid item xs={4}>
+              <div className={classes.flexContainer}>
+                <div className={clsx("hvr-grow-rotate", classes.flexItem)}>
+                  <IconButton href={socialLinks.goFundMe} target="_blank" rel="noopener noreferrer" >
+                    <img style={{ height: "1.5em" }} className={"hvr-grow-rotate"} src="https://image.flaticon.com/icons/svg/2111/2111427.svg" />
+                  </IconButton>
+
+                </div>
+              </div>
+            </Grid>
+          </Grid>
+
+          <div>
             <Typography
               className={clsx(classes.subHeader, classes.socialHeader)}
               variant="h4"
@@ -183,13 +172,13 @@ function Subscribed() {
               Spread the Word!
           </Typography>
             <Typography className={classes.body} variant="subtitle1" align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id. In cursus turpis massa tincidunt.
+              We still have room left in our early access programs. If you have friends or family you think  would be interested in improving the quality of their relationships, let them know using the links below.
          </Typography>
-         <div className={classes.flexContainer}>
-           <div className={classes.flexItem}>
-           <ShareBar />
-           </div>
-         </div>
+            <div className={classes.flexContainer}>
+              <div className={classes.flexItem}>
+                <ShareBar />
+              </div>
+            </div>
           </div>
         </Grid>
       </Grid>

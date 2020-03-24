@@ -13,6 +13,7 @@ import {
     TwitterIcon,
 } from "react-share";
 import { makeStyles } from "@material-ui/core";
+import clsx from "clsx"
 
 const useStyles = makeStyles(theme => ({
     socialBar: {
@@ -34,11 +35,11 @@ function ShareBar() {
     return (
 
         <div className={classes.socialBar}>
-            <FacebookShareButton className={classes.socialButton} url={PAGE_URL} ><FacebookIcon size={SHARE_SIZE} round /></FacebookShareButton>
-            <TwitterShareButton className={classes.socialButton} url={PAGE_URL} ><TwitterIcon size={SHARE_SIZE} round /></TwitterShareButton>
-            <LinkedinShareButton className={classes.socialButton} url={PAGE_URL} ><LinkedinIcon size={SHARE_SIZE} round /></LinkedinShareButton>
-            <RedditShareButton className={classes.socialButton} url={PAGE_URL} ><RedditIcon size={SHARE_SIZE} round bgStyle={{ fill: "#ff4500" }} /></RedditShareButton>
-            <EmailShareButton className={classes.socialButton} url={PAGE_URL} ><EmailIcon size={SHARE_SIZE} round /></EmailShareButton>
+            <FacebookShareButton className={clsx(classes.socialButton, "hvr-bounce-in")} url={PAGE_URL} ><FacebookIcon size={SHARE_SIZE} round /></FacebookShareButton>
+            <TwitterShareButton className={clsx(classes.socialButton, "hvr-bounce-in")} url={PAGE_URL} ><TwitterIcon size={SHARE_SIZE} round /></TwitterShareButton>
+            <LinkedinShareButton className={clsx(classes.socialButton, "hvr-bounce-in")} url={PAGE_URL} ><LinkedinIcon size={SHARE_SIZE} round /></LinkedinShareButton>
+            <RedditShareButton className={clsx(classes.socialButton, "hvr-bounce-in")} url={PAGE_URL} ><RedditIcon size={SHARE_SIZE} round bgStyle={{ fill: "#ff4500" }} /></RedditShareButton>
+            <EmailShareButton className={clsx(classes.socialButton, "hvr-bounce-in")} url={PAGE_URL} ><EmailIcon size={SHARE_SIZE} round /></EmailShareButton>
         </div>
 
     );
