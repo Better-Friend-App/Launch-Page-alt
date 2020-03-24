@@ -6,9 +6,15 @@
   },
   "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/dialogs/SimpleDialog.js",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
+    "@material-ui/lab": "^4.0.0-alpha.46",
     "gh-pages": "^2.2.0",
+    "hover.css": "^2.3.2",
     "prop-types": "latest",
     "react": "^16.13.0",
     "react-confetti": "5.0.1",
@@ -16,6 +22,7 @@
     "react-mailchimp-subscribe": "2.1.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
+    "react-share": "^4.1.0",
     "react-use": "13.26.3"
   },
   "name": "material-demo",
