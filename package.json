@@ -2,7 +2,7 @@
   "title": "Better Friend App",
   "homepage": "https://betterfriendapp.com",
   "devDependencies": {
-    "react-scripts": "^3.4.0"
+    "react-scripts": "^5.0.1"
   },
   "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/dialogs/SimpleDialog.js",
   "dependencies": {
